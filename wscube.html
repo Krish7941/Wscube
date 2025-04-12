@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>WScube TECH</title>
+</head>
+
+<body>
+    <div class="modal" id="enmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Enquiry Time</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="post" class="bannerfors ">
+                        <h3>Book Your Free Class Now!</h3>
+                        <p>2 Days of free demo classes without paying in advance!</p>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Name</label>
+                            <input type="username" class="form-control" id="exampleInputNAme1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">+91</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-outline-primary d-flex justify-content-center mb-3 mt-3">Register
+                            Now</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="container-fluid position-sticky top-0 bg-white">
+        <div class="container position-sticky">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a href="wscube.html" class="navbar-brand">
+                            <img src="logo_black 1.svg" height="66px" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">Courses</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex ms-5  me-3" role="search">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="btn-outer d-flex gap-3 justify-content-end">
+                            <button class="whatsappbtn btn btn-outline-success p-2"><i
+                                    class="fa-brands fa-whatsapp"></i>&nbsp&nbspChat with us</button>
+                            <button class="btn log">&nbspLogin In</button>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500" data-bs-wrap="true" id="slider1">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider1" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider4" data-bs-slide-to="2" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/premium-photo/digital-marketing-new-startup-project-online-search-engine-optimisation_36325-2205.jpg?uid=R112261211&ga=GA1.1.918351627.1740646674&semt=ais_hybrid&w=740"
+                    class="d-block w-90" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/premium-photo/marketing-digital-technology-business-concept-uds_31965-600982.jpg?uid=R112261211&ga=GA1.1.918351627.1740646674&semt=ais_hybrid&w=740"
+                class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/social-media-marketing-concept-marketing-with-applications_23-2150063136.jpg?uid=R112261211&ga=GA1.1.918351627.1740646674&semt=ais_hybrid&w=740"
+                class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/modern-equipped-computer-lab_23-2149241232.jpg?uid=R112261211&ga=GA1.1.918351627.1740646674&semt=ais_hybrid&w=740"
+                class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <header class="container-fluid py-2 bg-white  position-sticky top-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <figure class="col-lg-6 col-12 text-lg-start text-center mb-0 pb-0">
+                    <img src="data:image/png;base64,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"
+                        class="" height="60px" alt="">
+                </figure>
+                <div class="col-lg-6">
+                    <div class="btn-outer d-flex gap-3 justify-content-end">
+                        <button class="whatsappbtn btn btn-outline-success p-2"><i
+                                class="fa-brands fa-whatsapp"></i>&nbsp&nbspChat with us</button>
+                        <button class="btn call"><i class="fa-solid fa-phone"></i> &nbspCall Us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> -->
+    <section class="container-fluid py-lg-5 py-sm-4 py-3 align-items-center">
+        <div class="container">
+            <div class="row justify-content-between gy-4">
+                <div class="col-lg-6">
+                    <div class="bannerContent">
+                        <h1>Carrer Opportunities in <br><span>Digital Marketing</span></h1>
+                        <p>Digital marketing course so good,you only pay-after-placement</p>
+                        <ul class="m-0 p-0">
+                            <li class="mb-3"><i class="fa-sharp fa-solid fa-circle-check"></i> &nbsp Specialization:
+                                Performance Marketing</li>
+                            <li class="mb-3"><i class="fa-sharp fa-solid fa-circle-check"></i> &nbsp Min Salary of Rs.
+                                4.5 LPA</li>
+                            <li class="mb-3"><i class="fa-sharp fa-solid fa-circle-check"></i> &nbsp 50 seats only</li>
+                        </ul>
+                        <div class="bannerBtn d-flex gap-3">
+                            <button class="btn log">book 2 Days Demo</button>
+                            <button data-bs-toggle="modal" data-bs-target="#enmodal" class="btn download"><i
+                                    class="fa-solid fa-download"></i> Download Curriculum
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 shadow-lg">
+                    <form action="post" class="bannerform ">
+                        <h3>Book Your Free Class Now!</h3>
+                        <p>2 Days of free demo classes without paying in advance!</p>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Name</label>
+                            <input type="username" class="form-control" id="exampleInputNAme1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">+91</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="btn btn-outline-primary d-flex justify-content-center mb-3 mt-3">Register
+                            Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container  mt-5 p-2 justify-content-center countersection">
+            <div class="row p-2 text-center justify-content-center align-items-center">
+                <div class="col-lg-2">
+                    <span>
+                        <h3>1000+</h3>
+                    </span>
+                    <p>Student's Trained</p>
+                </div>
+                <div class="col-lg-2 p-2">
+                    <span class="d-flex gap-1 justify-content-center align-items-center"><span class="mb-2"><i
+                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                        <h3>4.5 LPA</h3>
+                    </span>
+                    <p>Placements</p>
+                </div>
+                <div class="col-lg-2 p-2">
+                    <span>
+                        <h3>320+</h3>
+                    </span>
+                    <p>Recruiting Partners</p>
+                </div>
+                <div class="col-lg-2 p-2">
+                    <span>
+                        <h3>10:00 am</h3>
+                    </span>
+                    <p>Program Timings</p>
+                </div>
+                <div class="col-lg-2 p-2">
+                    <span>
+                        <h3>11th May</h3>
+                    </span>
+                    <p>Next Batch starts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="highlights-section container-fluid p-5 ">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 fade-in-up">
+                    <h1>Key Highlights of the Course</h1>
+                    <p>understanding core digital marketing channels like SEO, SEM, social media, email marketing,
+                        content marketing, and analytics; learning to create targeted campaigns across these platforms,
+                        developing data-driven strategies to measure ROI.</p>
+                </div>
+            </div>
+            <div class="row gy-4 mb-5">
+                <div class="col-lg-4 col-sm-6 col-12 fade-in-up delay-1">
+                    <div class="bg-white p-3 d-flex gap-3 align-items-start highlightItems">
+                        <img src="https://cdn-icons-png.flaticon.com/128/510/510595.png" height="60px" alt="">
+                        <div>
+                            <h4>Assignments & <br>Modules tests</h4>
+                            <p>Test your Knowledge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 fade-in-up delay-2">
+                    <div class="bg-white p-3 d-flex gap-3 align-items-start highlightItems">
+                        <img src="https://cdn-icons-png.flaticon.com/128/17943/17943850.png" height="60px" alt="">
+                        <div>
+                            <h4>Industry-recognised<br>Certification</h4>
+                            <p>Stand out to your professional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 fade-in-up delay-3">
+                    <div class="bg-white p-3 d-flex gap-3 align-items-start highlightItems">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4340/4340530.png" height="60px" alt="">
+                        <div>
+                            <h4>Live Classes &<br>Recorded Lectures</h4>
+                            <p>Best of both worlds of learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex gap-3 align-items-start highlightItems">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9502/9502327.png" height="60px" alt="">
+                        <div>
+                            <h4>Downloadable<br>Content</h4>
+                            <p>With lifetime access</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex gap-3 align-items-start highlightItems">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9564/9564644.png" height="60px" alt="">
+                        <div>
+                            <h4>6 Industry Level<br>Projects</h4>
+                            <p>Get Practical skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="bg-white p-3 d-flex gap-3 align-items-start highlightItems">
+                        <img src="https://cdn-icons-png.flaticon.com/128/16799/16799604.png" height="60px" alt="">
+                        <div>
+                            <h4>4 Live Doubt Clearing<br>Sessions</h4>
+                            <p>Gain a clear understanding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="d-flex justify-content-center align-items-center text-center">
+                    <button class="highlightbtn btn btn-outline-primary">Book free Class</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carrer-options container-fluid py-s ">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-12 text-center">
+                    <h3>Top carrer options in <br>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra</p>
+                </div>
+            </div>
+            <div class="row py-3 gap-4 justify-content-center align-items-center">
+                <div class="col-lg-2 col-sm-5 carrer-items p-3">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8778/8778525.png" height="46px" width="46px"
+                            alt="">
+                    </div>
+                    <div class="py-2">
+                        <h4>Content Marketer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-5 carrer-items p-3">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/876/876054.png" height="46px" width="46px"
+                            alt="">
+                    </div>
+                    <div class="py-2">
+                        <h4>SEO Specialist</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-5 col-12 carrer-items p-3">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/5675/5675392.png" height="46px" width="46px"
+                            alt="">
+                    </div>
+                    <div class="py-2">
+                        <h4>Social Media</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-5 carrer-items p-3">
+                    <div class="img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1935/1935109.png" height="46px" width="46px"
+                            alt="">
+                    </div>
+                    <div class="py-2">
+                        <h4>Marketing Analyst</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certificate container-fluid py-2">
+        <div class="container">
+            <div class="row p-4 justify-content-center align-items-center gap-4">
+                <div class="col-lg-5">
+                    <div>
+                        <h2>Get Certified</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignis jjurkjf bfn hkjn </p>
+                    </div>
+                    <div
+                        class="col-lg-8 p-3 mt-4 d-flex gap-3 bg-white just-content-start align-items-center certifyitems ">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3730/3730010.png" height="66px" alt="">
+                        <div>
+                            <h4>Official and Verify</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo
+                                vestibulum at orci.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-8 p-3 mt-3 d-flex gap-3 bg-white just-content-start align-items-center certifyitems ">
+                        <img src="https://cdn-icons-png.flaticon.com/128/8010/8010315.png" height="66px" alt="">
+                        <div>
+                            <h4>Easily shareable</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo
+                                vestibulum at orci.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-8 p-3 d-flex mt-3 gap-3 bg-white just-content-start align-items-center certifyitems ">
+                        <img src="https://cdn-icons-png.flaticon.com/128/17812/17812139.png" height="66px" alt="">
+                        <div>
+                            <h4>Carrer Shifting</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo
+                                vestibulum at orci.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="d-flex justify-content-center align-items-center text-center">
+                            <button class="highlightbtn btn btn-outline-primary">Book free Class</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center align-items-center certifyimg">
+                    <img src="https://s3-alpha-sig.figma.com/img/8fea/0fba/c1d206d048f0a22e845cc0af6fa634fa?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V4rPRCieCq4EVTTb4iQiI8c1OHAp2nnkr8xti7~ZhNAnudFpbefE4PduVM5L~LcDDSHl4yTekg19yyQCcsmxOhCh6pTvwXhov7arFdOG~WprnXQa7nhK~gc0Cjlj7iAITRbQ6mqI-OHV8~dhncSnVRq09i57QLcwsxFQkpBcDLpau4XwIk0peSRt016gNFhHE84ZejoEEOHMzAwRf8cyzufEF20eek4XVVbykBE0xPMYK73Mv~uwFoUscGkkhz-BTbgptMoKAZ2uWiyq187csK-Q39iKeaNAHleY~59uRUh8mLghb-hAu7hWtZyQrmCHhQNs7w7BSP4jtDJYvRulSw__"
+                        height="597px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="curriculum container-fluid">
+
+        <div class="container-fluid p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center p-3">
+                        <h1>Curriculum of <br>Our Digital Marketing</h1>
+                        <p>The Digital Marketing course curriculum covers all aspects of this dynamic field, from social
+                            media marketing to search engine optimization.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="d-inline-flex justify-content-center align-items-center text-center">
+                        <button class="btn btn--outline" type="button" data-bs-toggle="collapse" href="#intro"
+                            aria-expanded="true" aria-controls="intro">
+                            Introduction
+                        </button>
+                        <button class="btn btn-outline" type="button" data-bs-toggle="collapse" data-bs-target="#cases"
+                            aria-expanded="false" aria-controls="cases">
+                            Case Studies
+                        </button>
+                        <button class="btn btn-outline" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#googlead" aria-expanded="false" aria-controls="googlad">
+                            Google Ad Sense
+                        </button>
+                        <button class="btn btn-outline" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#SEOmastery" aria-expanded="false" aria-controls="SEOmastery">
+                            SEO Mastery
+                        </button>
+                        <!-- <button class="btn btn-outline" type="button" data-bs-toggle="collapse" data-bs-target="#ganal" aria-expanded="false" aria-controls="ganal">
+                            Google Analytics
+                          </button> -->
+                    </p>
+                    <div class="collapse d-flex justify-content-center align-items-center" id="intro">
+                        <div class="card card-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp What is digital Marketing?
+                                </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Requirement of Digital
+                                    Marketing</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Digital Marketing for Working
+                                    Professionals</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Job opportunities in Digital
+                                    Marketing</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Scope of Digital Marketing
+                                </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Latest Trends in digital
+                                    Marketing</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Digital Marketing for
+                                    Small,Medium, and Large Businesses</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="cases">
+                        <div class="card card-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp E-commerce Website Content
+                                    Strategy</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp B2B Content Marketing
+                                    Campaign</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp SEO Optimization</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Social Media Marketing
+                                    Integration</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Conversion Rate Optimization
+                                    (CRO)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="googlead">
+                        <div class="card card-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Fundamentals of Google
+                                    AdSense</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Content Optimization for
+                                    AdSense</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Ad Placement Strategies</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Analytics and Monitoring</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp AdSense Policies and
+                                    Compliance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="SEOmastery">
+                        <div class="card card-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Introduction to SEO</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Keyword Research and Analysis
+                                </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp On-Page SEO Optimization</li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Content Creation and Strategy
+                                </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i>&nbsp Advanced SEO Topics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapse" id="ganal">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component. This panel is hidden by default but
+                            revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="learndm container-fluid">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-12 mb-3">
+                    <h2>Why Learn Digital Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare pharetra leo vestibulum at
+                        orci</p>
+                </div>
+            </div>
+            <div class="row gap-4 d-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-sm-5 learnitem p-4">
+                    <div class="img mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1769/1769059.png" height="56px" alt="">
+                    </div>
+                    <div>
+                        <h4>Learn From Industry Experts</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor
+                            facilisis dignissim felis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-5 learnitem p-4">
+                    <div class="img mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/4100/4100544.png" height="56px" alt="">
+                    </div>
+                    <div>
+                        <h4>Structured & latest curriculum</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor
+                            facilisis dignissim felis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-5 learnitem p-4">
+                    <div class="img mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3642/3642032.png" height="56px" alt="">
+                    </div>
+                    <div>
+                        <h4>Highly-Engaging Live Classes</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor
+                            facilisis dignissim felis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-5 learnitem p-4">
+                    <div class="img mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/18477/18477277.png" height="56px" alt="">
+                    </div>
+                    <div>
+                        <h4>Work on Real <br>Projects</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor
+                            facilisis dignissim felis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-5 learnitem p-4">
+                    <div class="img mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3281/3281307.png" height="56px" alt="">
+                    </div>
+                    <div>
+                        <h4>100% Job Assistance</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor
+                            facilisis dignissim felis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-5 learnitem p-4">
+                    <div class="img mb-3">
+                        <img src="https://cdn-icons-png.flaticon.com/128/17919/17919649.png" height="56px" alt="">
+                    </div>
+                    <div>
+                        <h4>Get Certification</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Vitae suspendisse pellentesque amet porttitor
+                            facilisis dignissim felis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="d-flex justify-content-center align-items-center text-center">
+                    <button class="highlightbtn btn btn-outline-primary">Book free Class</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="students container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>What Our Students <br> Are Saying!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+                </div>
+            </div>
+            <div class="row mt-4 gap-4 justify-content-center align-items-center">
+                <div class="col-lg-5 col-10 studentitem p-3 ">
+                    <div>
+                        <div class="d-flex gap-4 mb-2">
+                            <span class="img"><img
+                                    src="https://s3-alpha-sig.figma.com/img/5e6a/065a/52637ce2ab4cf410ab694f47773cb680?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hAxLz4aVT6cORAnMFFQkujimSIOzrbGKm4xbUBKpocDkhl7pypaAAqp-Fl8qNVA-4GNC94bEQUvdBoholAoKlyCcp-IyDpGGFiAr7zVm5W3hv263n4ITV-kWEJfgayRokavyAv4y-VhoS926cETushKictuWyGQIv-HTzm9M5Yty548VzcQn1Uozs6lo7ppINMURWXT08fvRSbeUdPpoBCWtDP3sWpRZJ4Soa3Ns15KBoATUv~QjRkmiyIjo2kszEY-qiuUvTpLch6xvMn1GlGQ3wYkgCJoi2czujD2FoBKalhyqFrvvMaZvgaziJ5VrzEjJXOYFzFInNE~V43DXCQ__"
+                                    height="65px" alt=""></span>
+                            <span>
+                                <h5>Matt Cannon</h5>
+                                <p>September 1,2023</p>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi. Sit
+                                eu nisl non scelerisque vestibulum pulvinar. Condimentum massa bibendum pretium
+                                tincidunt sed vel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-10 studentitem p-3">
+                    <div>
+                        <div class="d-flex gap-4 mb-2">
+                            <span class="img"><img
+                                    src="https://s3-alpha-sig.figma.com/img/5e6a/065a/52637ce2ab4cf410ab694f47773cb680?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hAxLz4aVT6cORAnMFFQkujimSIOzrbGKm4xbUBKpocDkhl7pypaAAqp-Fl8qNVA-4GNC94bEQUvdBoholAoKlyCcp-IyDpGGFiAr7zVm5W3hv263n4ITV-kWEJfgayRokavyAv4y-VhoS926cETushKictuWyGQIv-HTzm9M5Yty548VzcQn1Uozs6lo7ppINMURWXT08fvRSbeUdPpoBCWtDP3sWpRZJ4Soa3Ns15KBoATUv~QjRkmiyIjo2kszEY-qiuUvTpLch6xvMn1GlGQ3wYkgCJoi2czujD2FoBKalhyqFrvvMaZvgaziJ5VrzEjJXOYFzFInNE~V43DXCQ__"
+                                    height="65px" alt=""></span>
+                            <span>
+                                <h5>Matt Cannon</h5>
+                                <p>September 1,2023</p>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi. Sit
+                                eu nisl non scelerisque vestibulum pulvinar. Condimentum massa bibendum pretium
+                                tincidunt sed vel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="bluespace row py-5 mt-5">
+                <span><img src="https://s3-alpha-sig.figma.com/img/1a09/a766/393182831e0e0ff2938c4699798e0155?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=D2aSnKePP6EJ~dzN8l2iFzesutFwVvqpRzi2EAlUcXDLmhSVx-QdKDo0g~FLp2Ioivl3b~00NpEATmqIFOckRKqGI~joiXKHvdYnBwrn8ZlTyuFoY75mAhT4r9p91RMCpeRfoceEeYrk-JhkFeotIIH15CWieZmtnxJ8VQJBfRItjlszZEYheIJuuowR03LeS3rh1maRdL7UxedOKyYtmGhJFSWE74SM-fFx~CDpoyIIud74UX~SKk5lU8KEHfNYn4GZj9QJlIICYnwTHY8qgYgt0d6Vbr4DwDBTUGCqsx1DE0U9OEcoatoZaqsCx4ixnxwlIgftsseyBHtMvCVYxg__" height="180px"></span>
+                <span>
+                    <span><h2>Are You Ready To Start <br>Your Course?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi.</p></span>
+                </span>
+                <div class="col-lg-12 text-center">
+                    <div>
+                        <h2>Are You Ready To Start <br>Your Course?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi.</p>
+                    </div>
+                </div> -->
+        </div>
+        </div>
+    </section>
+    <!-- <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="bluespace d-flex p-0 gap-4 justify-content-between align-items-center">
+                    <div class="col-lg-2 d-flex justify-content-start align-items-start">
+                        <img src="https://s3-alpha-sig.figma.com/img/1a09/a766/393182831e0e0ff2938c4699798e0155?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=D2aSnKePP6EJ~dzN8l2iFzesutFwVvqpRzi2EAlUcXDLmhSVx-QdKDo0g~FLp2Ioivl3b~00NpEATmqIFOckRKqGI~joiXKHvdYnBwrn8ZlTyuFoY75mAhT4r9p91RMCpeRfoceEeYrk-JhkFeotIIH15CWieZmtnxJ8VQJBfRItjlszZEYheIJuuowR03LeS3rh1maRdL7UxedOKyYtmGhJFSWE74SM-fFx~CDpoyIIud74UX~SKk5lU8KEHfNYn4GZj9QJlIICYnwTHY8qgYgt0d6Vbr4DwDBTUGCqsx1DE0U9OEcoatoZaqsCx4ixnxwlIgftsseyBHtMvCVYxg__" height="250px" alt="">
+                    </div>
+                    <div class="col-lg-6 text-center ps-4 pe-4 m-2">
+                        <h2>Are You Ready To Start <br>Your Course?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Arcu nisi diam eget id turpis donec et morbi</p>
+                        <button class="startbtn btn-outline-primary">Book Free Class</button>
+                    </div>
+                    <div class="col-lg-2 d-flex justify-content-start align-items-start p-0">
+                        <img src="https://s3-alpha-sig.figma.com/img/1a09/a766/393182831e0e0ff2938c4699798e0155?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=D2aSnKePP6EJ~dzN8l2iFzesutFwVvqpRzi2EAlUcXDLmhSVx-QdKDo0g~FLp2Ioivl3b~00NpEATmqIFOckRKqGI~joiXKHvdYnBwrn8ZlTyuFoY75mAhT4r9p91RMCpeRfoceEeYrk-JhkFeotIIH15CWieZmtnxJ8VQJBfRItjlszZEYheIJuuowR03LeS3rh1maRdL7UxedOKyYtmGhJFSWE74SM-fFx~CDpoyIIud74UX~SKk5lU8KEHfNYn4GZj9QJlIICYnwTHY8qgYgt0d6Vbr4DwDBTUGCqsx1DE0U9OEcoatoZaqsCx4ixnxwlIgftsseyBHtMvCVYxg__" height="250px" class="img-flip" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class=" FAQ container-fluid mt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="des col-lg-12">
+                    <h2>Digital Marketing Course <br>FAQs</h2>
+                    <p>orem ipsum dolor sit amet consectetur Imperdiet tellus ut ornare pharetra.</p>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center">
+                <div class="accordion col-lg-8" id="accordionExample">
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is digital marketing ?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>Digital marketing</strong> is the practice of promoting brands and products
+                                    through online channels like social media, search engines, email, and other digital
+                                    platforms to reach potential customers and achieve business goals, allowing for
+                                    targeted messaging and measurable results compared to traditional marketing methods
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Why is digital marketing important?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Digital marketing is crucial because it allows businesses to reach a vast, targeted
+                                    audience online through various channels like social media, search engines, and
+                                    email, enabling them to effectively engage with potential customers, drive sales,
+                                    build brand awareness, and measure results precisely, making it a cost-effective way
+                                    to reach today's digitally connected consumers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What are the key components of a digital marketing strategy?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Key components of digital marketing include: Search Engine Optimization (SEO) to
+                                    <strong>improve website visibility</strong> on search engines, <strong>content
+                                        marketing</strong> to create valuable
+                                    content for audience engagement, <strong>social media marketing</strong> to interact
+                                    with users on
+                                    social platforms, <strong>pay-per-click (PPC) advertising</strong> for targeted ad
+                                    campaigns, <strong>email
+                                        marketing</strong> for lead nurturing, analytics to track campaign performance,
+                                    and target
+                                    audience research to understand customer needs and preferences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What is SEO ?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>SEO, which stands for <strong>"Search Engine Optimization,"</strong> is the practice
+                                    of optimizing a
+                                    website's content and technical aspects to improve its ranking in search engine
+                                    results pages (SERPs), thereby increasing organic traffic to the site by making it
+                                    more visible to users searching for relevant keywords.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How can I improve my website's SEO?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>To improve your website's SEO, focus on creating high-quality, relevant content that
+                                    incorporates targeted keywords throughout your pages, optimize your website for
+                                    mobile devices, build backlinks from reputable sources, ensure fast loading speeds,
+                                    and regularly update your content with fresh information while also addressing
+                                    technical issues like broken links and proper URL structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                What is the difference between on-page SEO and off-page SEO?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>On-page SEO</strong> refers to optimizing elements directly on your website
+                                    like content,
+                                    title tags, and internal linking, while <strong>off-page SEO</strong> focuses on
+                                    building external
+                                    signals of authority by acquiring backlinks from other websites, essentially
+                                    promoting your site beyond your own domain to increase its credibility in search
+                                    engines' eyes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="companies container-fluid text-center">
+        <div class="container">
+            <div class="row py-4 mt-5">
+                <div class="col-lg-12">
+                    <h2>Top Companies Hiring Digital Marketing in India</h2>
+                    <img src="https://s3-alpha-sig.figma.com/img/7a48/8d2d/cb60bd8e097ed0c730f56e6061f6dc5b?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oXJfrPBrjNgHABvKwArU2tCv6KTqxxrGLsPBzj4B8kgEfNbhk140yVe8S3MTiFs1takYNQDsCQfUxEmB8I~2znJ0b0SAxKCa1MiqhKeY7C9YNrZqRFzf6v1LzDCGv2lt5Qf-shSv8Mzf92zFQy-Qk440L7KspKyRtpQjh7q2nc0GfbfPZ4mQJ~AG89kP80w3f~hTGUONdfxAjiKCdxgX5Hxz4Tmc8iNMssbH8N0GBiF8tpryd6zRQiEpSOTf9EpUq4HqfgweOedWgUeagfpEqkVPGjKGKJ3qv3E4a0zfk8fLhucBdlUvd-2oIPs7fPqV3EkM1I7dmypjosXjt8Q76Q__" height="270px" width="640px" class="mt-4 image-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <footer class="footer container-fluid pt-4 mt-4">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="logo_black 2.svg" height="60px" class="mb-3">
+                    <p>Elevate Your Learning Journey with Cutting-Edge Education Technology.</p>
+                    <ul>
+                        <li class="me-4"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/2175/2175193.png"
+                                    height="40px" alt=""></a></li>
+                        <li class="me-4"><a href="#"><img src="github.png" height="40px" alt=""></a></li>
+                        <li class="me-4"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384014.png"
+                                    height="40px" alt=""></a></li>
+                        <li class="me-4"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/717/717426.png"
+                                    height="40px" alt=""></a></li>
+                        <li class="me-4"><a href="#"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077042.png"
+                                    height="40px" alt=""></a></li>
+                    </ul>
+                </div>
+                <hr class="mt-3">
+                <p class=" last mb-2">All rights reserved by <a href="">WsCube Tech</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</html>

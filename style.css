@@ -1,0 +1,443 @@
+*{
+    font-family: "Inter",sans-serif;
+}
+/* Define the animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+        transform:translateY(100px);
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+        transform: scale(1);
+    }
+}
+
+/* Apply the animation to elements with this class */
+.fade-in-up {
+    opacity: 0; /* Start with the element invisible */
+    animation: fadeInUp 0.6s ease-in-out forwards;
+}
+
+/* Optionally, add a delay for staggered animations */
+.fade-in-up.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.fade-in-up.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.fade-in-up.delay-3 {
+    animation-delay: 0.6s;
+}
+header{
+    z-index:10;
+}
+/* Underline Animation */
+header ul .nav-item a {
+    position: relative;
+    text-decoration: none;
+} 
+@keyframes appear{
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale: 1;
+}
+}
+header ul .nav-item a::after {
+    content: "";
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 3px;
+    background-color: #2699FB;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+header ul .nav-item a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+header ul .nav-item a:hover {
+    color: #ff7f66;
+}
+.whatsappbtn{
+    padding: 10px 18px;
+    border: 1px solid green;
+    font-size: 16px;
+}
+.log{
+    border: 1px solid rgb(159, 158, 158);
+    color: black;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.log:hover{
+    /* transform:scale(1.03); */
+    color:white;
+    box-shadow: 1px 1px 8px linear-gradient(170deg,#b825e9,#0e56f1,#b825e9);
+    background: linear-gradient(to right,#4E65FF,#92EFFD);
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+#slider1 {
+    height: 500px; /* You can change this to any height you want */
+}
+
+#slider1 .carousel-inner,
+#slider1 .carousel-item,
+#slider1 img {
+    height: 100%;
+}
+
+#slider1 img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+.bannerContent h1{
+    font-size: 52px;
+    font-weight: 700;
+    animation: appear 2s ease-in-out;
+    background: -webkit-linear-gradient(#4E65FF,#92EFFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation-timeline:scroll(scroller axis); */
+}
+.bannerContent h1 span{
+    color: #2699FB;
+    background: url("Vector\ 63.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    /* animation: appear 2s ease-in-out; */
+}
+.bannerContent p{
+    font-size: 20px;
+}
+.bannerContent li{
+    list-style: none;
+    font-size: 20px;
+}
+.bannerContent ul li i{
+    color: #2699FB;
+}
+.bannerContent .download{
+    border: 1px solid black;
+    transition:color 0.s2 ease-out;
+}
+.download:hover{
+    background: linear-gradient(to right,#4E65FF,#92EFFD);
+    color: white;
+    border: none;
+}
+.bannerform{
+    padding: 40px;
+    animation: appear ease-in-out;
+}
+.bannerform h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.bannerform .btn{
+    width:100%;
+    border:1px solid #2699FB;
+}
+.bannerform .btn:hover{
+    background: linear-gradient(to right,#4E65FF,#92EFFD);
+    border:none;
+}
+/* .countersection .col:hover{
+    box-shadow: 1px 1px 5px rgb(147, 145, 145);
+    border-radius: 10px;
+} */
+.countersection i{
+    color: #2699FB;
+    font-size: 20px;
+    animation: appear 2s ease-in-out;
+}
+.countersection h3{
+    font-size: 25px;
+    color:#2699FB;
+    animation: appear 2s ease-in-out;
+}
+.highlights-section{
+    background-color: #F7FAFF;
+}
+.highlights-section h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+.highlights-section p{
+    font-size: 16px;
+}
+.imgback1{
+    background-color: #ceeef6c3;
+    padding: 5px;
+}
+.highlightItems{
+    transition: all 0.2s ease-in-out;
+    animation: appear 2s ease-in-out;
+}
+.highlightItems:hover{
+    transform: scale(1.033);
+    /* transform:rotate(7deg) scale(1.08); */
+    /* background:linear-gradient(to right,#4E65FF,#92EFFD); */
+    box-shadow: 1px 1px 6px rgb(156, 155, 155);
+    border-radius: 10px;
+}
+.highlightItems img{
+    transition:all 0.3s ease-in-out
+}
+.highlightItems:hover img{
+    
+    transform:rotate(7deg) scale(1.08);
+}
+.highlightItems h4{
+    font-size: 17px;
+}
+.highlightItems p{
+    font-size: 13px;
+}
+.highlightbtn:hover{
+    background: linear-gradient(to right,#0ACEFE,#2699FB);
+    border: none;
+}
+.carrer-options h3{
+    font-size: 44px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#4E65FF,#92EFFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.carrer-options p{
+    font-size: 18px;
+}
+.carrer-items{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow:1px 1px 7px #cbcece;
+    transition: all 0.2s ease-in-out;
+    animation: appear 2s ease-in-out;
+}
+.carrer-items:hover{
+    transform: scale(1.033);
+    box-shadow: 1px 1px 6px rgb(156, 155, 155);
+    border-radius: 10px;
+}
+.carrer-items img{
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #cbcece;
+}
+.carrer-items img{
+    border: none;;
+}
+.carrer-items h4{
+    font-size: 18px;
+}
+.carrer-items p{
+    font-size: 15px;
+}
+.certificate{
+    background-color: #f7faff;
+}
+.certificate .certifyimg img{
+    height: 497px;
+    width:356px;
+}
+.certificate h2{
+    font-weight: 700;
+    font-size: 36px;
+}
+.certifyitems{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgb(165, 165, 165);
+    width:100%;
+    transition: all 0.2s ease-in-out;
+    animation: appear 2s ease-in-out;
+}
+.certifyitems:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 8px rgb(68, 67, 67);
+}
+.certifyitems h4{
+    font-weight: 600;
+}
+.certifyitems p{
+    font-size: 14px;
+}
+.certifyimg img{
+    transition: all 0.2s ease-in-out;
+    animation: appear 2s ease-in-out;
+}
+.certifyimg img:hover{
+    transform: scale(1.03);
+}
+#navbarNav ul li a{
+    color: #2699FB;
+    font-size: 20px;
+    font-weight: 600;
+}
+.curriculum .card ul li{
+    list-style: none;
+}
+.curriculum h1{
+    font-weight: 700;
+    font-size: 44px;
+    background: -webkit-linear-gradient(#4E65FF,#92EFFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.curriculum p{
+    font-size: 18px;
+}
+.curriculum ul li i{
+    color: #2699FB;
+}
+.learndm{
+    background-color: #f7faff;
+}
+.learndm
+.learndm h2{
+    font-size: 44px;
+    font-weight: 700;
+}
+.learnitem{
+    background-color: white;
+    border: 1px solid rgba(223, 220, 220, 0.747);
+    /* box-shadow: 1px 1px 5px rgb(121, 121, 121); */
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    animation: appear 2s ease-in-out;
+}
+.learnitem:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 6px rgb(156, 155, 155);
+    border-radius: 10px;
+}
+.learnitem img{
+    background-color: white;
+    padding: 6px;
+    border:none;
+    box-shadow: 1px 1px 4px rgb(165, 165, 165);
+    border-radius: 8px;
+}
+.students h2{
+    font-weight: 700;
+    font-size: 44px;
+    background: -webkit-linear-gradient(#4E65FF,#92EFFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    animation: appear ease-in-out;
+}
+.studentitem{
+    background-color: white;
+    border: 1px solid rgba(223, 220, 220, 0.747);
+    box-shadow: 1px 1px 5px rgb(121, 121, 121);
+    border-radius: 10px;
+    animation: appear 2s ease-in-out;
+}
+.studentitem img{
+    border-radius: 50%;
+    animation: appear 2s ease-in-out;
+}
+.studentitem h5{
+    font-weight: 600;
+}
+.bluespace{
+    border-radius: 15px;
+    background:linear-gradient(to right,#0ACEFE,#2699FB) ;
+}
+.bluespace h2{
+    color: white;
+    font-size: 44px;
+    font-weight: 700;
+}
+.bluespace p{
+    color: white;
+    font-size: 18px;
+}
+.startbtn{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.bluespace .img-flip{
+    transform:scaleX(-1);
+}
+.FAQ .des h2{
+    font-size: 44px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#4E65FF,#92EFFD);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.accordion-item{
+    border: 1px solid rgb(200, 198, 198);
+    box-shadow: 1px 1px 5px rgb(176, 174, 174);
+    border-radius: 10px;
+    animation: appear 2s  ease-in-out;
+}
+.companies{
+    background-color: #f7faff;
+}
+.companies h2{
+    font-size: 44px;
+    font-weight: 700;
+}
+.footer{
+    background-color: #0A2540;
+    /* animation: appear 2s 8s ease-in-out; */
+}
+footer hr{
+    border: 1.1px solid rgba(255, 255, 255, 0.793);
+    width: 100%;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+footer ul li img{
+    transition: all 0.2s ease-in-out;
+}
+footer ul li img:hover{
+    border:none;
+    transform:scale(1.09);
+    /* background-color: #F7FAFF; */
+}
+.footer p{
+    color: white;
+}
+.footer .last{
+    margin-top: 10px;
+}
